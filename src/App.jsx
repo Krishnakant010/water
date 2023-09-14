@@ -7,6 +7,7 @@ import CustomLocation from "./pages/CustomLocation";
 import Result from "./pages/Result";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import { CM } from "./pages/CM";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,12 +29,7 @@ function App() {
         <Route
           path="/custom"
           element={
-            <CustomLocation
-              setLat={setLat}
-              setlong={setlong}
-              lat={lat}
-              long={long}
-            />
+            <CM setLat={setLat} setlong={setlong} lat={lat} long={long} />
           }
         />
         <Route path="/result" element={<Result lat={lat} long={long} />} />

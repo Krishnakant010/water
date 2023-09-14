@@ -4,10 +4,9 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Product", href: "#" },
+  { name: "Custom", href: "/custom" },
   { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Results", href: "/result" },
 ];
 
 export default function Home({ setLat, setlong, lat, long }) {
