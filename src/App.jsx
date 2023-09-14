@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router";
 import CustomLocation from "./pages/CustomLocation";
 import Result from "./pages/Result";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,7 +19,12 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<div>HOME</div>} />
+        <Route
+          path="/"
+          element={
+            <Home setLat={setLat} setlong={setlong} lat={lat} long={long} />
+          }
+        />
         <Route path="/location" element={<div>Grant location</div>} />
         <Route
           path="/custom"
